@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.4.4](https://github.com/fortify/fortify-ssc-parser-owasp-dependency-check/compare/v1.4.3...v1.4.4) (2026-06-24)
+
+
+### Bug Fixes
+
+* Improve handling of large input fields to avoid SSC upload failures (fixes [#18](https://github.com/fortify/fortify-ssc-parser-owasp-dependency-check/issues/18)) ([20b82b0](https://github.com/fortify/fortify-ssc-parser-owasp-dependency-check/commit/20b82b0ec564242462eb06601aca8c8faee6f83a))
+* Update vendor name and url to Open Text ([20b82b0](https://github.com/fortify/fortify-ssc-parser-owasp-dependency-check/commit/20b82b0ec564242462eb06601aca8c8faee6f83a))
+
 ### [1.4.3](https://www.github.com/fortify-ps/fortify-ssc-parser-owasp-dependency-check/compare/v1.4.2...v1.4.3) (2022-05-03)
 
 
