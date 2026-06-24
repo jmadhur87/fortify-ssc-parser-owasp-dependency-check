@@ -10,9 +10,11 @@ name: Build development release
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Check-out source code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v6
       
       - name: Define development release info
         if: startsWith(github.ref, 'refs/heads/')
@@ -36,7 +38,7 @@ jobs:
         
       - name: Publish build artifacts
         if: env.DO_BUILD
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v7
         with:
           name: build_artifacts
           path: ${{ env.DIST_DIR }}
